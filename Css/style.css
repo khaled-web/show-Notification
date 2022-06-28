@@ -1,0 +1,67 @@
+/* font style */
+ @import url('https://fonts.googleapis.com/css?family=Poppins:whgt@200;400&display=swap');
+
+/* General style */
+:root{
+ --clr-white01:#F6FBF4;
+ --clr-white02: #fff;
+ --clr-white03: #ffffff;
+ --clr-grey01: #ecf0f1;
+ --clr-grey02: #777;
+ --clr-grey03: #aaa;
+ --clr-red01:#F47C7C;
+ --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+ --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column-gap: 0;
+  justify-content: center;
+  height: 100vh;
+  background-color: rebeccapurple;
+  font-family: 'Poppins', 'sans-serif';
+  overflow: hidden;
+  margin: 0;
+}
+
+.btn{
+  background-color: var(--clr-white03);
+  color: rebeccapurple;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:focus{
+  outline: none;
+}
+
+.btn:active{
+  transform: scale(.98);
+}
+
+#toasts{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.toast{
+  background: var(--clr-white02);
+  color: rebeccapurple;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin: .5rem;
+}
+
+
+
